@@ -1,0 +1,11 @@
+# Proton Drive share acquisition — additional dependencies.
+# These power `scripts/acquire_proton.py` and the `make acquire` target.
+# They are intentionally separated from the lightweight `requirements.txt`
+# (which is only for the offline analysis/render pipeline) so that
+# contributors who don't need acquisition don't have to install them.
+#
+# Pinned to widely-compatible versions known to work on Python 3.11+.
+requests>=2.31.0,<3
+bcrypt>=4.1.0,<5
+cryptography>=42.0.0,<46
+pgpy>=0.6.0,<0.7

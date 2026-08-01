@@ -1,0 +1,21 @@
+{
+  "_comment": "Proton Drive share configuration. Copy to config/acquire.json and fill in the tokens + fragment secrets. DO NOT commit the real acquire.json — it is in .gitignore. See docs/acquisition.md.",
+  "_how_to_get": "Open a Proton Drive public share, copy the URL. The part after /urls/ is the token. The part after # is the fragment secret (kept client-side only).",
+  "output_root": "assets/source",
+  "shares": [
+    {
+      "name": "audio",
+      "token": "REPLACE_WITH_SHARE_TOKEN",
+      "secret": "REPLACE_WITH_FRAGMENT_SECRET",
+      "subdir": "audio",
+      "filename": "master.wav"
+    },
+    {
+      "name": "visual",
+      "token": "REPLACE_WITH_SHARE_TOKEN",
+      "secret": "REPLACE_WITH_FRAGMENT_SECRET",
+      "subdir": "visual",
+      "filename": "artwork.png"
+    }
+  ]
+}

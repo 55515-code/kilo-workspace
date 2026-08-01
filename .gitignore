@@ -35,3 +35,8 @@ analysis/
 *.mp4
 *.mov
 *.mp3
+
+# Acquire-time artifacts (per-share encrypted block cache, venv stamps)
+*.parts/
+.venv/.acquire-deps.stamp
+config/acquire.json

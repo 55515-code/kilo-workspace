@@ -1,0 +1,3 @@
+# Acquire-time configuration (Proton Drive shares). Contains secrets.
+# Generated from config/acquire.example.json. NEVER commit this file.
+acquire.json
