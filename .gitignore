@@ -27,3 +27,11 @@ __pycache__/
 
 # Docker volumes
 pgdata/
+
+# Music video pipeline
+renders/
+analysis/
+*.wav
+*.mp4
+*.mov
+*.mp3

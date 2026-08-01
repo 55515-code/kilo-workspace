@@ -1,0 +1,6 @@
+# Git LFS tracking
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov
+*.wav
+*.flac
+*.png

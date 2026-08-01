@@ -1,4 +1,4 @@
-.PHONY: setup dev lint test clean
+.PHONY: setup dev lint test clean acquire analyze animatic render validate
 
 setup:
 	bash scripts/setup.sh
@@ -24,3 +24,19 @@ compose-down:
 
 compose-with-db:
 	docker compose --profile with-db up -d
+
+# Music video pipeline
+acquire:
+	bash scripts/acquire.sh
+
+analyze:
+	bash scripts/analyze.sh
+
+animatic:
+	bash scripts/animatic.sh
+
+render:
+	bash scripts/render.sh
+
+validate:
+	bash scripts/validate.sh
