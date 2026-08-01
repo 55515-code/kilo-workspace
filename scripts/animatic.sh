@@ -1,30 +1,66 @@
 #!/bin/bash
-# Generate animatic (rough cut with placeholder visuals)
-set -e
+# Generate low-resolution animatic for review
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+cd "$PROJECT_DIR"
 
 echo "🎬 Generating animatic..."
 
-if [ ! -f "assets/source/audio.wav" ]; then
-    echo "❌ Audio file not found: assets/source/audio.wav"
-    echo "   Run 'make acquire' first"
+AUDIO="assets/source/audio/master.wav"
+if [ ! -f "$AUDIO" ]; then
+    echo "❌ Audio not found: $AUDIO"
+    echo "   Run 'bash scripts/acquire.sh' first"
     exit 1
 fi
 
-if [ ! -f "analysis/beat_info.json" ]; then
-    echo "⚠ Beat analysis not found, running analyze first..."
-    bash scripts/analyze.sh
+if [ ! -f "analysis/section_map.json" ]; then
+    echo "❌ Section map not found: analysis/section_map.json"
+    echo "   Run 'bash scripts/analyze.sh' first"
+    exit 1
 fi
 
-mkdir -p renders/animatic
+mkdir -p renders/proxy/frames review/keyframes
 
-# Create placeholder video with audio
-echo "  Creating placeholder video..."
-ffmpeg -y -f lavfi -i "color=c=black:s=1920x1080:d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 assets/source/audio.wav)" \
-    -i assets/source/audio.wav \
-    -c:v libx264 -preset ultrafast -crf 28 \
-    -c:a aac -b:a 192k \
-    -shortest \
-    renders/animatic/rough_cut.mp4
+echo "  Rendering animatic frames..."
+if ! python3 scripts/render_animatic.py; then
+    echo "❌ Frame rendering failed"
+    exit 1
+fi
 
-echo "✓ Animatic complete"
-echo "  Output: renders/animatic/rough_cut.mp4"
+FRAME_COUNT=$(ls -1 renders/proxy/frames/frame_*.png 2>/dev/null | wc -l)
+if [ "$FRAME_COUNT" -eq 0 ]; then
+    echo "❌ No frames generated"
+    exit 1
+fi
+echo "  ✓ Generated $FRAME_COUNT frames"
+
+echo "  Assembling animatic video..."
+if command -v ffmpeg &> /dev/null; then
+    ffmpeg -y -framerate 24 -i renders/proxy/frames/frame_%06d.png \
+        -i "$AUDIO" \
+        -c:v libx264 -preset fast -crf 28 \
+        -c:a aac -b:a 192k \
+        -pix_fmt yuv420p \
+        -shortest \
+        renders/proxy/the_magicians_empire_animatic.mp4 2>/dev/null
+    
+    if [ -f "renders/proxy/the_magicians_empire_animatic.mp4" ]; then
+        echo "  ✓ Animatic video created"
+    else
+        echo "  ⚠ Video assembly failed"
+    fi
+else
+    echo "  ⚠ ffmpeg not available, skipping video assembly"
+fi
+
+echo "  Generating contact sheet..."
+if python3 scripts/generate_contact_sheet.py; then
+    echo "  ✓ Contact sheet created"
+else
+    echo "  ⚠ Contact sheet generation failed"
+fi
+
+echo ""
+echo "✓ Animatic complete: renders/proxy/the_magicians_empire_animatic.mp4"

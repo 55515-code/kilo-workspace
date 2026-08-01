@@ -1,0 +1,308 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="lineGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="starPoint" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="40%" style="stop-color:#aaccff;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#4488ff;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="#050510"/>
+  
+  <g id="backgroundStars" opacity="0.3">
+    <circle cx="120" cy="80" r="1" fill="#ffffff"/>
+    <circle cx="340" cy="150" r="0.8" fill="#aaccff"/>
+    <circle cx="560" cy="60" r="1.2" fill="#ffffff"/>
+    <circle cx="780" cy="200" r="0.6" fill="#aaccff"/>
+    <circle cx="1000" cy="90" r="1" fill="#ffffff"/>
+    <circle cx="1220" cy="170" r="0.8" fill="#aaccff"/>
+    <circle cx="1440" cy="50" r="1.1" fill="#ffffff"/>
+    <circle cx="1660" cy="130" r="0.7" fill="#aaccff"/>
+    <circle cx="1800" cy="220" r="0.9" fill="#ffffff"/>
+    <circle cx="200" cy="900" r="0.8" fill="#aaccff"/>
+    <circle cx="400" cy="950" r="1" fill="#ffffff"/>
+    <circle cx="600" cy="880" r="0.6" fill="#aaccff"/>
+    <circle cx="800" cy="1000" r="0.9" fill="#ffffff"/>
+    <circle cx="1100" cy="920" r="0.7" fill="#aaccff"/>
+    <circle cx="1300" cy="980" r="1.1" fill="#ffffff"/>
+    <circle cx="1500" cy="900" r="0.8" fill="#aaccff"/>
+    <circle cx="1700" cy="960" r="0.6" fill="#ffffff"/>
+    <circle cx="150" cy="500" r="0.5" fill="#aaccff"/>
+    <circle cx="1770" cy="600" r="0.7" fill="#ffffff"/>
+    <circle cx="960" cy="30" r="0.9" fill="#aaccff"/>
+    <circle cx="960" cy="1050" r="0.8" fill="#ffffff"/>
+  </g>
+  
+  <g id="connectionLines" filter="url(#lineGlow)">
+    <line x1="300" y1="250" x2="520" y2="380" stroke="#4488ff" stroke-width="1" opacity="0.4"/>
+    <line x1="520" y1="380" x2="750" y2="300" stroke="#4488ff" stroke-width="1" opacity="0.4"/>
+    <line x1="750" y1="300" x2="960" y2="420" stroke="#4488ff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="960" y1="420" x2="1170" y2="300" stroke="#4488ff" stroke-width="1" opacity="0.4"/>
+    <line x1="1170" y1="300" x2="1400" y2="380" stroke="#4488ff" stroke-width="1" opacity="0.4"/>
+    <line x1="1400" y1="380" x2="1620" y2="250" stroke="#4488ff" stroke-width="1" opacity="0.4"/>
+    
+    <line x1="300" y1="250" x2="400" y2="540" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="520" y1="380" x2="550" y2="600" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="750" y1="300" x2="700" y2="550" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="960" y1="420" x2="960" y2="650" stroke="#4488ff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="1170" y1="300" x2="1220" y2="550" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="1400" y1="380" x2="1370" y2="600" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="1620" y1="250" x2="1520" y2="540" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    
+    <line x1="400" y1="540" x2="550" y2="600" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="550" y1="600" x2="700" y2="550" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="700" y1="550" x2="960" y2="650" stroke="#4488ff" stroke-width="1" opacity="0.4"/>
+    <line x1="960" y1="650" x2="1220" y2="550" stroke="#4488ff" stroke-width="1" opacity="0.4"/>
+    <line x1="1220" y1="550" x2="1370" y2="600" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="1370" y1="600" x2="1520" y2="540" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    
+    <line x1="400" y1="540" x2="350" y2="780" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="550" y1="600" x2="580" y2="800" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="700" y1="550" x2="760" y2="780" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="960" y1="650" x2="960" y2="850" stroke="#4488ff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="1220" y1="550" x2="1160" y2="780" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="1370" y1="600" x2="1340" y2="800" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="1520" y1="540" x2="1570" y2="780" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    
+    <line x1="350" y1="780" x2="580" y2="800" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="580" y1="800" x2="760" y2="780" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="760" y1="780" x2="960" y2="850" stroke="#4488ff" stroke-width="1" opacity="0.4"/>
+    <line x1="960" y1="850" x2="1160" y2="780" stroke="#4488ff" stroke-width="1" opacity="0.4"/>
+    <line x1="1160" y1="780" x2="1340" y2="800" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    <line x1="1340" y1="800" x2="1570" y2="780" stroke="#4488ff" stroke-width="1" opacity="0.3"/>
+    
+    <line x1="300" y1="250" x2="750" y2="300" stroke="#4488ff" stroke-width="0.5" opacity="0.2"/>
+    <line x1="960" y1="420" x2="1400" y2="380" stroke="#4488ff" stroke-width="0.5" opacity="0.2"/>
+    <line x1="400" y1="540" x2="700" y2="550" stroke="#4488ff" stroke-width="0.5" opacity="0.2"/>
+    <line x1="1220" y1="550" x2="1520" y2="540" stroke="#4488ff" stroke-width="0.5" opacity="0.2"/>
+    <line x1="350" y1="780" x2="760" y2="780" stroke="#4488ff" stroke-width="0.5" opacity="0.2"/>
+    <line x1="1160" y1="780" x2="1570" y2="780" stroke="#4488ff" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  
+  <g id="humanFigures">
+    <g id="figure1" transform="translate(300, 250)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure2" transform="translate(520, 380)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure3" transform="translate(750, 300)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure4" transform="translate(960, 420)" filter="url(#starGlow)">
+      <circle cx="0" cy="-35" r="10" fill="url(#starPoint)"/>
+      <line x1="0" y1="-25" x2="0" y2="12" stroke="#ffffff" stroke-width="2.5"/>
+      <line x1="0" y1="-12" x2="-18" y2="5" stroke="#ffffff" stroke-width="2"/>
+      <line x1="0" y1="-12" x2="18" y2="5" stroke="#ffffff" stroke-width="2"/>
+      <line x1="0" y1="12" x2="-12" y2="35" stroke="#ffffff" stroke-width="2"/>
+      <line x1="0" y1="12" x2="12" y2="35" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="0" cy="-35" r="16" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+      <circle cx="0" cy="-35" r="22" fill="none" stroke="#4488ff" stroke-width="0.5" opacity="0.3"/>
+    </g>
+    
+    <g id="figure5" transform="translate(1170, 300)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure6" transform="translate(1400, 380)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure7" transform="translate(1620, 250)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure8" transform="translate(400, 540)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure9" transform="translate(550, 600)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure10" transform="translate(700, 550)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure11" transform="translate(960, 650)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="9" fill="url(#starPoint)"/>
+      <line x1="0" y1="-21" x2="0" y2="10" stroke="#ffffff" stroke-width="2"/>
+      <line x1="0" y1="-8" x2="-16" y2="5" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="0" y1="-8" x2="16" y2="5" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-11" y2="32" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="11" y2="32" stroke="#ffffff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="14" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure12" transform="translate(1220, 550)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure13" transform="translate(1370, 600)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure14" transform="translate(1520, 540)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure15" transform="translate(350, 780)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure16" transform="translate(580, 800)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure17" transform="translate(760, 780)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure18" transform="translate(960, 850)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="9" fill="url(#starPoint)"/>
+      <line x1="0" y1="-21" x2="0" y2="10" stroke="#ffffff" stroke-width="2"/>
+      <line x1="0" y1="-8" x2="-16" y2="5" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="0" y1="-8" x2="16" y2="5" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-11" y2="32" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="11" y2="32" stroke="#ffffff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="14" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure19" transform="translate(1160, 780)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure20" transform="translate(1340, 800)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    
+    <g id="figure21" transform="translate(1570, 780)" filter="url(#starGlow)">
+      <circle cx="0" cy="-30" r="8" fill="url(#starPoint)"/>
+      <line x1="0" y1="-22" x2="0" y2="10" stroke="#aaccff" stroke-width="2"/>
+      <line x1="0" y1="-10" x2="-15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="-10" x2="15" y2="5" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="-10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="10" y2="30" stroke="#aaccff" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+  </g>
+</svg>

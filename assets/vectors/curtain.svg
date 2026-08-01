@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <filter id="curtainGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="leftCurtainGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b0000;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#6b0000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4a0000;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="rightCurtainGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a0000;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#6b0000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8b0000;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4a000;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#a08000;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#c4a000;stop-opacity:0.8"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="#0a0a0a"/>
+  
+  <g id="rigging">
+    <rect x="0" y="0" width="1920" height="80" fill="#1a1a1a"/>
+    <rect x="0" y="80" width="1920" height="4" fill="#2a2a2a"/>
+    
+    <g id="pulleySystem">
+      <circle cx="200" cy="40" r="25" fill="none" stroke="#696969" stroke-width="3"/>
+      <circle cx="200" cy="40" r="15" fill="none" stroke="#696969" stroke-width="2"/>
+      <circle cx="200" cy="40" r="5" fill="#696969"/>
+      
+      <circle cx="500" cy="40" r="25" fill="none" stroke="#696969" stroke-width="3"/>
+      <circle cx="500" cy="40" r="15" fill="none" stroke="#696969" stroke-width="2"/>
+      <circle cx="500" cy="40" r="5" fill="#696969"/>
+      
+      <circle cx="800" cy="40" r="25" fill="none" stroke="#696969" stroke-width="3"/>
+      <circle cx="800" cy="40" r="15" fill="none" stroke="#696969" stroke-width="2"/>
+      <circle cx="800" cy="40" r="5" fill="#696969"/>
+      
+      <circle cx="1120" cy="40" r="25" fill="none" stroke="#696969" stroke-width="3"/>
+      <circle cx="1120" cy="40" r="15" fill="none" stroke="#696969" stroke-width="2"/>
+      <circle cx="1120" cy="40" r="5" fill="#696969"/>
+      
+      <circle cx="1420" cy="40" r="25" fill="none" stroke="#696969" stroke-width="3"/>
+      <circle cx="1420" cy="40" r="15" fill="none" stroke="#696969" stroke-width="2"/>
+      <circle cx="1420" cy="40" r="5" fill="#696969"/>
+      
+      <circle cx="1720" cy="40" r="25" fill="none" stroke="#696969" stroke-width="3"/>
+      <circle cx="1720" cy="40" r="15" fill="none" stroke="#696969" stroke-width="2"/>
+      <circle cx="1720" cy="40" r="5" fill="#696969"/>
+    </g>
+    
+    <g id="ropes">
+      <line x1="200" y1="65" x2="200" y2="200" stroke="#4a4a4a" stroke-width="2"/>
+      <line x1="500" y1="65" x2="500" y2="200" stroke="#4a4a4a" stroke-width="2"/>
+      <line x1="800" y1="65" x2="800" y2="200" stroke="#4a4a4a" stroke-width="2"/>
+      <line x1="1120" y1="65" x2="1120" y2="200" stroke="#4a4a4a" stroke-width="2"/>
+      <line x1="1420" y1="65" x2="1420" y2="200" stroke="#4a4a4a" stroke-width="2"/>
+      <line x1="1720" y1="65" x2="1720" y2="200" stroke="#4a4a4a" stroke-width="2"/>
+      
+      <line x1="200" y1="65" x2="200" y2="1080" stroke="#3a3a3a" stroke-width="1" opacity="0.5"/>
+      <line x1="500" y1="65" x2="500" y2="1080" stroke="#3a3a3a" stroke-width="1" opacity="0.5"/>
+      <line x1="800" y1="65" x2="800" y2="1080" stroke="#3a3a3a" stroke-width="1" opacity="0.5"/>
+      <line x1="1120" y1="65" x2="1120" y2="1080" stroke="#3a3a3a" stroke-width="1" opacity="0.5"/>
+      <line x1="1420" y1="65" x2="1420" y2="1080" stroke="#3a3a3a" stroke-width="1" opacity="0.5"/>
+      <line x1="1720" y1="65" x2="1720" y2="1080" stroke="#3a3a3a" stroke-width="1" opacity="0.5"/>
+    </g>
+    
+    <g id="mechanicalDetails">
+      <rect x="150" y="100" width="100" height="20" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="1"/>
+      <rect x="450" y="100" width="100" height="20" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="1"/>
+      <rect x="750" y="100" width="100" height="20" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="1"/>
+      <rect x="1070" y="100" width="100" height="20" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="1"/>
+      <rect x="1370" y="100" width="100" height="20" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="1"/>
+      <rect x="1670" y="100" width="100" height="20" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <g id="leftCurtain">
+    <path d="M 0 84 Q 200 100 400 84 L 400 1080 L 0 1080 Z" fill="url(#leftCurtainGrad)"/>
+    
+    <path d="M 50 84 Q 50 500 60 1080" fill="none" stroke="#6b0000" stroke-width="40" opacity="0.6"/>
+    <path d="M 150 84 Q 150 500 160 1080" fill="none" stroke="#6b0000" stroke-width="40" opacity="0.6"/>
+    <path d="M 250 84 Q 250 500 260 1080" fill="none" stroke="#6b0000" stroke-width="40" opacity="0.6"/>
+    <path d="M 350 84 Q 350 500 360 1080" fill="none" stroke="#6b0000" stroke-width="40" opacity="0.6"/>
+    
+    <path d="M 0 84 Q 200 100 400 84" fill="none" stroke="url(#goldTrim)" stroke-width="6" filter="url(#curtainGlow)"/>
+    <path d="M 0 120 Q 200 136 400 120" fill="none" stroke="url(#goldTrim)" stroke-width="3" opacity="0.7"/>
+    
+    <path d="M 380 84 Q 390 500 400 1080" fill="none" stroke="#c4a000" stroke-width="4" opacity="0.5" filter="url(#curtainGlow)"/>
+    
+    <path d="M 100 200 Q 110 400 100 600" fill="none" stroke="#4a0000" stroke-width="2" opacity="0.4"/>
+    <path d="M 200 300 Q 210 500 200 700" fill="none" stroke="#4a0000" stroke-width="2" opacity="0.4"/>
+    <path d="M 300 250 Q 310 450 300 650" fill="none" stroke="#4a0000" stroke-width="2" opacity="0.4"/>
+  </g>
+  
+  <g id="rightCurtain">
+    <path d="M 1520 84 Q 1720 100 1920 84 L 1920 1080 L 1520 1080 Z" fill="url(#rightCurtainGrad)"/>
+    
+    <path d="M 1570 84 Q 1570 500 1560 1080" fill="none" stroke="#6b0000" stroke-width="40" opacity="0.6"/>
+    <path d="M 1670 84 Q 1670 500 1660 1080" fill="none" stroke="#6b0000" stroke-width="40" opacity="0.6"/>
+    <path d="M 1770 84 Q 1770 500 1760 1080" fill="none" stroke="#6b0000" stroke-width="40" opacity="0.6"/>
+    <path d="M 1870 84 Q 1870 500 1860 1080" fill="none" stroke="#6b0000" stroke-width="40" opacity="0.6"/>
+    
+    <path d="M 1520 84 Q 1720 100 1920 84" fill="none" stroke="url(#goldTrim)" stroke-width="6" filter="url(#curtainGlow)"/>
+    <path d="M 1520 120 Q 1720 136 1920 120" fill="none" stroke="url(#goldTrim)" stroke-width="3" opacity="0.7"/>
+    
+    <path d="M 1540 84 Q 1530 500 1520 1080" fill="none" stroke="#c4a000" stroke-width="4" opacity="0.5" filter="url(#curtainGlow)"/>
+    
+    <path d="M 1620 200 Q 1610 400 1620 600" fill="none" stroke="#4a0000" stroke-width="2" opacity="0.4"/>
+    <path d="M 1720 300 Q 1710 500 1720 700" fill="none" stroke="#4a0000" stroke-width="2" opacity="0.4"/>
+    <path d="M 1820 250 Q 1810 450 1820 650" fill="none" stroke="#4a0000" stroke-width="2" opacity="0.4"/>
+  </g>
+  
+  <g id="centerGap">
+    <rect x="400" y="84" width="1120" height="996" fill="#0a0a0a"/>
+    
+    <path d="M 400 84 L 400 1080" fill="none" stroke="#4a0040" stroke-width="3" opacity="0.6"/>
+    <path d="M 1520 84 L 1520 1080" fill="none" stroke="#4a0040" stroke-width="3" opacity="0.6"/>
+    
+    <path d="M 400 200 Q 450 200 500 210 Q 550 220 600 200" fill="none" stroke="#4a0040" stroke-width="2" opacity="0.3"/>
+    <path d="M 1320 200 Q 1370 200 1420 210 Q 1470 220 1520 200" fill="none" stroke="#4a0040" stroke-width="2" opacity="0.3"/>
+    
+    <path d="M 400 400 Q 450 400 500 410 Q 550 420 600 400" fill="none" stroke="#4a0040" stroke-width="2" opacity="0.3"/>
+    <path d="M 1320 400 Q 1370 400 1420 410 Q 1470 420 1520 400" fill="none" stroke="#4a0040" stroke-width="2" opacity="0.3"/>
+    
+    <path d="M 400 600 Q 450 600 500 610 Q 550 620 600 600" fill="none" stroke="#4a0040" stroke-width="2" opacity="0.3"/>
+    <path d="M 1320 600 Q 1370 600 1420 610 Q 1470 620 1520 600" fill="none" stroke="#4a0040" stroke-width="2" opacity="0.3"/>
+    
+    <path d="M 400 800 Q 450 800 500 810 Q 550 820 600 800" fill="none" stroke="#4a0040" stroke-width="2" opacity="0.3"/>
+    <path d="M 1320 800 Q 1370 800 1420 810 Q 1470 820 1520 800" fill="none" stroke="#4a0040" stroke-width="2" opacity="0.3"/>
+  </g>
+  
+  <g id="tassels">
+    <circle cx="400" cy="150" r="15" fill="#c4a000" opacity="0.7"/>
+    <path d="M 400 165 L 400 250" stroke="#c4a000" stroke-width="3" opacity="0.6"/>
+    <path d="M 395 250 L 395 280 M 400 250 L 400 285 M 405 250 L 405 280" stroke="#c4a000" stroke-width="2" opacity="0.5"/>
+    
+    <circle cx="1520" cy="150" r="15" fill="#c4a000" opacity="0.7"/>
+    <path d="M 1520 165 L 1520 250" stroke="#c4a000" stroke-width="3" opacity="0.6"/>
+    <path d="M 1515 250 L 1515 280 M 1520 250 L 1520 285 M 1525 250 L 1525 280" stroke="#c4a000" stroke-width="2" opacity="0.5"/>
+  </g>
+</svg>

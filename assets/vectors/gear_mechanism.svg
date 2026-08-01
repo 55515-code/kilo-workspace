@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <filter id="metalGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="gearMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b7355;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#696969;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#8b7355;stop-opacity:0.8"/>
+    </linearGradient>
+    <radialGradient id="gearCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b7355;stop-opacity:0.9"/>
+      <stop offset="70%" style="stop-color:#696969;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#4a4a4a;stop-opacity:0.3"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="#1a1a1a"/>
+  
+  <g id="mainGear1" transform="translate(960, 540)">
+    <circle cx="0" cy="0" r="180" fill="none" stroke="url(#gearMetal)" stroke-width="8"/>
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#696969" stroke-width="4"/>
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#8b7355" stroke-width="3" opacity="0.6"/>
+    <circle cx="0" cy="0" r="60" fill="url(#gearCenter)"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#8b7355" stroke-width="3"/>
+    <circle cx="0" cy="0" r="30" fill="#4a4a4a"/>
+    
+    <g id="teeth1">
+      <rect x="-15" y="-195" width="30" height="30" fill="#8b7355" opacity="0.8"/>
+      <rect x="-15" y="165" width="30" height="30" fill="#8b7355" opacity="0.8"/>
+      <rect x="-195" y="-15" width="30" height="30" fill="#8b7355" opacity="0.8"/>
+      <rect x="165" y="-15" width="30" height="30" fill="#8b7355" opacity="0.8"/>
+      
+      <rect x="120" y="-150" width="30" height="30" fill="#8b7355" opacity="0.8" transform="rotate(45 135 -135)"/>
+      <rect x="-150" y="-150" width="30" height="30" fill="#8b7355" opacity="0.8" transform="rotate(-45 -135 -135)"/>
+      <rect x="120" y="120" width="30" height="30" fill="#8b7355" opacity="0.8" transform="rotate(-45 135 135)"/>
+      <rect x="-150" y="120" width="30" height="30" fill="#8b7355" opacity="0.8" transform="rotate(45 -135 135)"/>
+      
+      <rect x="160" y="-70" width="30" height="30" fill="#8b7355" opacity="0.8" transform="rotate(22.5 175 -55)"/>
+      <rect x="-190" y="-70" width="30" height="30" fill="#8b7355" opacity="0.8" transform="rotate(-22.5 -175 -55)"/>
+      <rect x="160" y="40" width="30" height="30" fill="#8b7355" opacity="0.8" transform="rotate(-22.5 175 55)"/>
+      <rect x="-190" y="40" width="30" height="30" fill="#8b7355" opacity="0.8" transform="rotate(22.5 -175 55)"/>
+    </g>
+    
+    <line x1="0" y1="-140" x2="0" y2="-60" stroke="#696969" stroke-width="4"/>
+    <line x1="0" y1="60" x2="0" y2="140" stroke="#696969" stroke-width="4"/>
+    <line x1="-140" y1="0" x2="-60" y2="0" stroke="#696969" stroke-width="4"/>
+    <line x1="60" y1="0" x2="140" y2="0" stroke="#696969" stroke-width="4"/>
+  </g>
+  
+  <g id="gear2" transform="translate(600, 300)">
+    <circle cx="0" cy="0" r="120" fill="none" stroke="url(#gearMetal)" stroke-width="6"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#696969" stroke-width="3"/>
+    <circle cx="0" cy="0" r="40" fill="url(#gearCenter)"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#8b7355" stroke-width="2"/>
+    <circle cx="0" cy="0" r="20" fill="#4a4a4a"/>
+    
+    <g id="teeth2">
+      <rect x="-12" y="-132" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="-12" y="108" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="-132" y="-12" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="108" y="-12" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      
+      <rect x="75" y="-105" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(45 87 -93)"/>
+      <rect x="-99" y="-105" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(-45 -87 -93)"/>
+      <rect x="75" y="81" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(-45 87 93)"/>
+      <rect x="-99" y="81" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(45 -87 93)"/>
+    </g>
+    
+    <line x1="0" y1="-100" x2="0" y2="-40" stroke="#696969" stroke-width="3"/>
+    <line x1="0" y1="40" x2="0" y2="100" stroke="#696969" stroke-width="3"/>
+    <line x1="-100" y1="0" x2="-40" y2="0" stroke="#696969" stroke-width="3"/>
+    <line x1="40" y1="0" x2="100" y2="0" stroke="#696969" stroke-width="3"/>
+  </g>
+  
+  <g id="gear3" transform="translate(1320, 300)">
+    <circle cx="0" cy="0" r="120" fill="none" stroke="url(#gearMetal)" stroke-width="6"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#696969" stroke-width="3"/>
+    <circle cx="0" cy="0" r="40" fill="url(#gearCenter)"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#8b7355" stroke-width="2"/>
+    <circle cx="0" cy="0" r="20" fill="#4a4a4a"/>
+    
+    <g id="teeth3">
+      <rect x="-12" y="-132" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="-12" y="108" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="-132" y="-12" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="108" y="-12" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      
+      <rect x="75" y="-105" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(45 87 -93)"/>
+      <rect x="-99" y="-105" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(-45 -87 -93)"/>
+      <rect x="75" y="81" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(-45 87 93)"/>
+      <rect x="-99" y="81" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(45 -87 93)"/>
+    </g>
+    
+    <line x1="0" y1="-100" x2="0" y2="-40" stroke="#696969" stroke-width="3"/>
+    <line x1="0" y1="40" x2="0" y2="100" stroke="#696969" stroke-width="3"/>
+    <line x1="-100" y1="0" x2="-40" y2="0" stroke="#696969" stroke-width="3"/>
+    <line x1="40" y1="0" x2="100" y2="0" stroke="#696969" stroke-width="3"/>
+  </g>
+  
+  <g id="gear4" transform="translate(600, 780)">
+    <circle cx="0" cy="0" r="120" fill="none" stroke="url(#gearMetal)" stroke-width="6"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#696969" stroke-width="3"/>
+    <circle cx="0" cy="0" r="40" fill="url(#gearCenter)"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#8b7355" stroke-width="2"/>
+    <circle cx="0" cy="0" r="20" fill="#4a4a4a"/>
+    
+    <g id="teeth4">
+      <rect x="-12" y="-132" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="-12" y="108" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="-132" y="-12" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="108" y="-12" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      
+      <rect x="75" y="-105" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(45 87 -93)"/>
+      <rect x="-99" y="-105" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(-45 -87 -93)"/>
+      <rect x="75" y="81" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(-45 87 93)"/>
+      <rect x="-99" y="81" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(45 -87 93)"/>
+    </g>
+    
+    <line x1="0" y1="-100" x2="0" y2="-40" stroke="#696969" stroke-width="3"/>
+    <line x1="0" y1="40" x2="0" y2="100" stroke="#696969" stroke-width="3"/>
+    <line x1="-100" y1="0" x2="-40" y2="0" stroke="#696969" stroke-width="3"/>
+    <line x1="40" y1="0" x2="100" y2="0" stroke="#696969" stroke-width="3"/>
+  </g>
+  
+  <g id="gear5" transform="translate(1320, 780)">
+    <circle cx="0" cy="0" r="120" fill="none" stroke="url(#gearMetal)" stroke-width="6"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#696969" stroke-width="3"/>
+    <circle cx="0" cy="0" r="40" fill="url(#gearCenter)"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#8b7355" stroke-width="2"/>
+    <circle cx="0" cy="0" r="20" fill="#4a4a4a"/>
+    
+    <g id="teeth5">
+      <rect x="-12" y="-132" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="-12" y="108" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="-132" y="-12" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      <rect x="108" y="-12" width="24" height="24" fill="#8b7355" opacity="0.8"/>
+      
+      <rect x="75" y="-105" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(45 87 -93)"/>
+      <rect x="-99" y="-105" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(-45 -87 -93)"/>
+      <rect x="75" y="81" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(-45 87 93)"/>
+      <rect x="-99" y="81" width="24" height="24" fill="#8b7355" opacity="0.8" transform="rotate(45 -87 93)"/>
+    </g>
+    
+    <line x1="0" y1="-100" x2="0" y2="-40" stroke="#696969" stroke-width="3"/>
+    <line x1="0" y1="40" x2="0" y2="100" stroke="#696969" stroke-width="3"/>
+    <line x1="-100" y1="0" x2="-40" y2="0" stroke="#696969" stroke-width="3"/>
+    <line x1="40" y1="0" x2="100" y2="0" stroke="#696969" stroke-width="3"/>
+  </g>
+  
+  <g id="pulleys">
+    <circle cx="300" cy="540" r="50" fill="none" stroke="#696969" stroke-width="4"/>
+    <circle cx="300" cy="540" r="35" fill="none" stroke="#8b7355" stroke-width="2"/>
+    <circle cx="300" cy="540" r="15" fill="#4a4a4a"/>
+    
+    <circle cx="1620" cy="540" r="50" fill="none" stroke="#696969" stroke-width="4"/>
+    <circle cx="1620" cy="540" r="35" fill="none" stroke="#8b7355" stroke-width="2"/>
+    <circle cx="1620" cy="540" r="15" fill="#4a4a4a"/>
+    
+    <path d="M 300 540 Q 450 420 600 300" fill="none" stroke="#4a4a4a" stroke-width="3" opacity="0.6"/>
+    <path d="M 300 540 Q 450 660 600 780" fill="none" stroke="#4a4a4a" stroke-width="3" opacity="0.6"/>
+    <path d="M 1620 540 Q 1470 420 1320 300" fill="none" stroke="#4a4a4a" stroke-width="3" opacity="0.6"/>
+    <path d="M 1620 540 Q 1470 660 1320 780" fill="none" stroke="#4a4a4a" stroke-width="3" opacity="0.6"/>
+  </g>
+  
+  <g id="connectingRods">
+    <line x1="720" y1="300" x2="840" y2="540" stroke="#696969" stroke-width="6"/>
+    <line x1="1200" y1="300" x2="1080" y2="540" stroke="#696969" stroke-width="6"/>
+    <line x1="720" y1="780" x2="840" y2="540" stroke="#696969" stroke-width="6"/>
+    <line x1="1200" y1="780" x2="1080" y2="540" stroke="#696969" stroke-width="6"/>
+    
+    <circle cx="720" cy="300" r="8" fill="#8b7355"/>
+    <circle cx="840" cy="540" r="8" fill="#8b7355"/>
+    <circle cx="1200" cy="300" r="8" fill="#8b7355"/>
+    <circle cx="1080" cy="540" r="8" fill="#8b7355"/>
+    <circle cx="720" cy="780" r="8" fill="#8b7355"/>
+    <circle cx="1200" cy="780" r="8" fill="#8b7355"/>
+  </g>
+</svg>

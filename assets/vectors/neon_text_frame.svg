@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <filter id="neonMagenta">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
+      <feGaussianBlur stdDeviation="8" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neonCyan">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
+      <feGaussianBlur stdDeviation="8" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softNeon">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="flicker">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="transparent"/>
+  
+  <g id="outerFrameMagenta">
+    <rect x="60" y="40" width="1800" height="1000" fill="none" stroke="#ff00ff" stroke-width="3" rx="8" filter="url(#neonMagenta)" opacity="0.9"/>
+    <rect x="60" y="40" width="1800" height="1000" fill="none" stroke="#ff88ff" stroke-width="1" rx="8" opacity="0.6"/>
+    
+    <rect x="65" y="45" width="1790" height="990" fill="none" stroke="#ff00ff" stroke-width="1" rx="6" opacity="0.3"/>
+  </g>
+  
+  <g id="innerFrameCyan">
+    <rect x="100" y="70" width="1720" height="940" fill="none" stroke="#00ffff" stroke-width="2.5" rx="6" filter="url(#neonCyan)" opacity="0.85"/>
+    <rect x="100" y="70" width="1720" height="940" fill="none" stroke="#88ffff" stroke-width="1" rx="6" opacity="0.5"/>
+    
+    <rect x="105" y="75" width="1710" height="930" fill="none" stroke="#00ffff" stroke-width="0.5" rx="4" opacity="0.3"/>
+  </g>
+  
+  <g id="cornerAccents">
+    <g id="topLeftCorner">
+      <path d="M 60 120 L 60 40 L 140 40" fill="none" stroke="#ff00ff" stroke-width="5" filter="url(#neonMagenta)"/>
+      <path d="M 100 150 L 100 70 L 180 70" fill="none" stroke="#00ffff" stroke-width="4" filter="url(#neonCyan)"/>
+      <circle cx="60" cy="40" r="6" fill="#ff00ff" filter="url(#softNeon)" opacity="0.8"/>
+      <circle cx="100" cy="70" r="5" fill="#00ffff" filter="url(#softNeon)" opacity="0.8"/>
+    </g>
+    
+    <g id="topRightCorner">
+      <path d="M 1780 40 L 1860 40 L 1860 120" fill="none" stroke="#ff00ff" stroke-width="5" filter="url(#neonMagenta)"/>
+      <path d="M 1740 70 L 1820 70 L 1820 150" fill="none" stroke="#00ffff" stroke-width="4" filter="url(#neonCyan)"/>
+      <circle cx="1860" cy="40" r="6" fill="#ff00ff" filter="url(#softNeon)" opacity="0.8"/>
+      <circle cx="1820" cy="70" r="5" fill="#00ffff" filter="url(#softNeon)" opacity="0.8"/>
+    </g>
+    
+    <g id="bottomLeftCorner">
+      <path d="M 60 960 L 60 1040 L 140 1040" fill="none" stroke="#ff00ff" stroke-width="5" filter="url(#neonMagenta)"/>
+      <path d="M 100 930 L 100 1010 L 180 1010" fill="none" stroke="#00ffff" stroke-width="4" filter="url(#neonCyan)"/>
+      <circle cx="60" cy="1040" r="6" fill="#ff00ff" filter="url(#softNeon)" opacity="0.8"/>
+      <circle cx="100" cy="1010" r="5" fill="#00ffff" filter="url(#softNeon)" opacity="0.8"/>
+    </g>
+    
+    <g id="bottomRightCorner">
+      <path d="M 1860 960 L 1860 1040 L 1780 1040" fill="none" stroke="#ff00ff" stroke-width="5" filter="url(#neonMagenta)"/>
+      <path d="M 1820 930 L 1820 1010 L 1740 1010" fill="none" stroke="#00ffff" stroke-width="4" filter="url(#neonCyan)"/>
+      <circle cx="1860" cy="1040" r="6" fill="#ff00ff" filter="url(#softNeon)" opacity="0.8"/>
+      <circle cx="1820" cy="1010" r="5" fill="#00ffff" filter="url(#softNeon)" opacity="0.8"/>
+    </g>
+  </g>
+  
+  <g id="topCenterAccent">
+    <line x1="700" y1="40" x2="1220" y2="40" stroke="#ff00ff" stroke-width="4" filter="url(#neonMagenta)" opacity="0.7"/>
+    <line x1="750" y1="70" x2="1170" y2="70" stroke="#00ffff" stroke-width="3" filter="url(#neonCyan)" opacity="0.6"/>
+    <circle cx="960" cy="40" r="4" fill="#ff00ff" filter="url(#softNeon)"/>
+    <circle cx="960" cy="70" r="3" fill="#00ffff" filter="url(#softNeon)"/>
+  </g>
+  
+  <g id="bottomCenterAccent">
+    <line x1="700" y1="1040" x2="1220" y2="1040" stroke="#ff00ff" stroke-width="4" filter="url(#neonMagenta)" opacity="0.7"/>
+    <line x1="750" y1="1010" x2="1170" y2="1010" stroke="#00ffff" stroke-width="3" filter="url(#neonCyan)" opacity="0.6"/>
+    <circle cx="960" cy="1040" r="4" fill="#ff00ff" filter="url(#softNeon)"/>
+    <circle cx="960" cy="1010" r="3" fill="#00ffff" filter="url(#softNeon)"/>
+  </g>
+  
+  <g id="leftCenterAccent">
+    <line x1="60" y1="380" x2="60" y2="700" stroke="#ff00ff" stroke-width="4" filter="url(#neonMagenta)" opacity="0.7"/>
+    <line x1="100" y1="400" x2="100" y2="680" stroke="#00ffff" stroke-width="3" filter="url(#neonCyan)" opacity="0.6"/>
+    <circle cx="60" cy="540" r="4" fill="#ff00ff" filter="url(#softNeon)"/>
+    <circle cx="100" cy="540" r="3" fill="#00ffff" filter="url(#softNeon)"/>
+  </g>
+  
+  <g id="rightCenterAccent">
+    <line x1="1860" y1="380" x2="1860" y2="700" stroke="#ff00ff" stroke-width="4" filter="url(#neonMagenta)" opacity="0.7"/>
+    <line x1="1820" y1="400" x2="1820" y2="680" stroke="#00ffff" stroke-width="3" filter="url(#neonCyan)" opacity="0.6"/>
+    <circle cx="1860" cy="540" r="4" fill="#ff00ff" filter="url(#softNeon)"/>
+    <circle cx="1820" cy="540" r="3" fill="#00ffff" filter="url(#softNeon)"/>
+  </g>
+  
+  <g id="decorativeElements">
+    <g id="topDiamond">
+      <polygon points="960,25 970,40 960,55 950,40" fill="none" stroke="#ff00ff" stroke-width="1.5" filter="url(#flicker)" opacity="0.6"/>
+    </g>
+    <g id="bottomDiamond">
+      <polygon points="960,1025 970,1040 960,1055 950,1040" fill="none" stroke="#ff00ff" stroke-width="1.5" filter="url(#flicker)" opacity="0.6"/>
+    </g>
+    <g id="leftDiamond">
+      <polygon points="45,540 60,530 75,540 60,550" fill="none" stroke="#00ffff" stroke-width="1.5" filter="url(#flicker)" opacity="0.6"/>
+    </g>
+    <g id="rightDiamond">
+      <polygon points="1845,540 1860,530 1875,540 1860,550" fill="none" stroke="#00ffff" stroke-width="1.5" filter="url(#flicker)" opacity="0.6"/>
+    </g>
+    
+    <line x1="200" y1="40" x2="200" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    <line x1="400" y1="40" x2="400" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    <line x1="1520" y1="40" x2="1520" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    <line x1="1720" y1="40" x2="1720" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    
+    <line x1="200" y1="1025" x2="200" y2="1040" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    <line x1="400" y1="1025" x2="400" y2="1040" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    <line x1="1520" y1="1025" x2="1520" y2="1040" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    <line x1="1720" y1="1025" x2="1720" y2="1040" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    
+    <line x1="60" y1="200" x2="75" y2="200" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    <line x1="60" y1="400" x2="75" y2="400" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    <line x1="60" y1="680" x2="75" y2="680" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    <line x1="60" y1="880" x2="75" y2="880" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    
+    <line x1="1845" y1="200" x2="1860" y2="200" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    <line x1="1845" y1="400" x2="1860" y2="400" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    <line x1="1845" y1="680" x2="1860" y2="680" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    <line x1="1845" y1="880" x2="1860" y2="880" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <g id="ambientGlow">
+    <rect x="60" y="40" width="1800" height="1000" fill="none" stroke="#ff00ff" stroke-width="0.5" rx="8" opacity="0.15" filter="url(#softNeon)"/>
+    <rect x="100" y="70" width="1720" height="940" fill="none" stroke="#00ffff" stroke-width="0.5" rx="6" opacity="0.1" filter="url(#softNeon)"/>
+  </g>
+</svg>

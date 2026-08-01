@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2d2d2d" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="#1a1a1a"/>
+  <rect width="1920" height="1080" fill="url(#gridPattern)"/>
+  
+  <g id="mazeStructure">
+    <path d="M 100 100 L 300 100 L 300 200 L 500 200 L 500 100 L 700 100 L 700 300 L 900 300 L 900 100 L 1100 100 L 1100 200 L 1300 200 L 1300 100 L 1500 100 L 1500 300 L 1700 300 L 1700 100 L 1820 100" 
+          fill="none" stroke="#2d2d2d" stroke-width="8"/>
+    <path d="M 100 100 L 300 100 L 300 200 L 500 200 L 500 100 L 700 100 L 700 300 L 900 300 L 900 100 L 1100 100 L 1100 200 L 1300 200 L 1300 100 L 1500 100 L 1500 300 L 1700 300 L 1700 100 L 1820 100" 
+          fill="none" stroke="#ff00ff" stroke-width="2" filter="url(#neonGlow)"/>
+    
+    <path d="M 100 200 L 200 200 L 200 400 L 400 400 L 400 300 L 600 300 L 600 500 L 800 500 L 800 400 L 1000 400 L 1000 600 L 1200 600 L 1200 400 L 1400 400 L 1400 500 L 1600 500 L 1600 300 L 1820 300" 
+          fill="none" stroke="#2d2d2d" stroke-width="8"/>
+    <path d="M 100 200 L 200 200 L 200 400 L 400 400 L 400 300 L 600 300 L 600 500 L 800 500 L 800 400 L 1000 400 L 1000 600 L 1200 600 L 1200 400 L 1400 400 L 1400 500 L 1600 500 L 1600 300 L 1820 300" 
+          fill="none" stroke="#00ffff" stroke-width="2" filter="url(#neonGlow)"/>
+    
+    <path d="M 100 400 L 300 400 L 300 600 L 500 600 L 500 500 L 700 500 L 700 700 L 900 700 L 900 600 L 1100 600 L 1100 800 L 1300 800 L 1300 600 L 1500 600 L 1500 700 L 1700 700 L 1700 500 L 1820 500" 
+          fill="none" stroke="#2d2d2d" stroke-width="8"/>
+    <path d="M 100 400 L 300 400 L 300 600 L 500 600 L 500 500 L 700 500 L 700 700 L 900 700 L 900 600 L 1100 600 L 1100 800 L 1300 800 L 1300 600 L 1500 600 L 1500 700 L 1700 700 L 1700 500 L 1820 500" 
+          fill="none" stroke="#ff00ff" stroke-width="2" filter="url(#neonGlow)"/>
+    
+    <path d="M 100 600 L 200 600 L 200 800 L 400 800 L 400 700 L 600 700 L 600 900 L 800 900 L 800 800 L 1000 800 L 1000 980 L 1200 980 L 1200 800 L 1400 800 L 1400 900 L 1600 900 L 1600 700 L 1820 700" 
+          fill="none" stroke="#2d2d2d" stroke-width="8"/>
+    <path d="M 100 600 L 200 600 L 200 800 L 400 800 L 400 700 L 600 700 L 600 900 L 800 900 L 800 800 L 1000 800 L 1000 980 L 1200 980 L 1200 800 L 1400 800 L 1400 900 L 1600 900 L 1600 700 L 1820 700" 
+          fill="none" stroke="#00ffff" stroke-width="2" filter="url(#neonGlow)"/>
+    
+    <path d="M 200 100 L 200 300 M 400 200 L 400 400 M 600 100 L 600 300 M 800 300 L 800 500 M 1000 200 L 1000 400 M 1200 300 L 1200 500 M 1400 100 L 1400 300 M 1600 400 L 1600 600" 
+          fill="none" stroke="#2d2d2d" stroke-width="6"/>
+    <path d="M 200 100 L 200 300 M 400 200 L 400 400 M 600 100 L 600 300 M 800 300 L 800 500 M 1000 200 L 1000 400 M 1200 300 L 1200 500 M 1400 100 L 1400 300 M 1600 400 L 1600 600" 
+          fill="none" stroke="#ff00ff" stroke-width="1.5" filter="url(#neonGlow)"/>
+    
+    <path d="M 300 400 L 300 600 M 500 300 L 500 500 M 700 500 L 700 700 M 900 400 L 900 600 M 1100 500 L 1100 700 M 1300 600 L 1300 800 M 1500 500 L 1500 700 M 1700 600 L 1700 800" 
+          fill="none" stroke="#2d2d2d" stroke-width="6"/>
+    <path d="M 300 400 L 300 600 M 500 300 L 500 500 M 700 500 L 700 700 M 900 400 L 900 600 M 1100 500 L 1100 700 M 1300 600 L 1300 800 M 1500 500 L 1500 700 M 1700 600 L 1700 800" 
+          fill="none" stroke="#00ffff" stroke-width="1.5" filter="url(#neonGlow)"/>
+    
+    <circle cx="400" cy="300" r="15" fill="none" stroke="#ff00ff" stroke-width="2" filter="url(#strongGlow)"/>
+    <circle cx="800" cy="500" r="15" fill="none" stroke="#00ffff" stroke-width="2" filter="url(#strongGlow)"/>
+    <circle cx="1200" cy="600" r="15" fill="none" stroke="#ff00ff" stroke-width="2" filter="url(#strongGlow)"/>
+    <circle cx="1600" cy="400" r="15" fill="none" stroke="#00ffff" stroke-width="2" filter="url(#strongGlow)"/>
+    
+    <path d="M 400 300 L 800 500 M 800 500 L 1200 600 M 1200 600 L 1600 400" 
+          fill="none" stroke="#ff00ff" stroke-width="1" stroke-dasharray="5,5" filter="url(#neonGlow)" opacity="0.6"/>
+    
+    <rect x="250" y="250" width="100" height="100" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.3"/>
+    <rect x="650" y="450" width="100" height="100" fill="none" stroke="#ff00ff" stroke-width="1" opacity="0.3"/>
+    <rect x="1050" y="550" width="100" height="100" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.3"/>
+    <rect x="1450" y="350" width="100" height="100" fill="none" stroke="#ff00ff" stroke-width="1" opacity="0.3"/>
+    
+    <path d="M 150 150 L 180 150 L 180 180 M 180 150 L 150 180" fill="none" stroke="#ff00ff" stroke-width="1" opacity="0.5"/>
+    <path d="M 1700 900 L 1730 900 L 1730 930 M 1730 900 L 1700 930" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <g id="impossiblePaths" opacity="0.4">
+    <path d="M 960 540 Q 1060 440 1160 540 Q 1060 640 960 540" fill="none" stroke="#ff00ff" stroke-width="1" filter="url(#neonGlow)"/>
+    <path d="M 960 540 Q 860 440 760 540 Q 860 640 960 540" fill="none" stroke="#00ffff" stroke-width="1" filter="url(#neonGlow)"/>
+  </g>
+</svg>

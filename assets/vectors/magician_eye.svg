@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#c4a000;stop-opacity:0.8"/>
+      <stop offset="70%" style="stop-color:#8b6f00;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="gearGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4a000;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#8b6f00;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="#0a0a0a"/>
+  
+  <g id="outerGeometry">
+    <circle cx="960" cy="540" r="400" fill="none" stroke="#c4a000" stroke-width="2" opacity="0.3"/>
+    <circle cx="960" cy="540" r="350" fill="none" stroke="#c4a000" stroke-width="1" opacity="0.2"/>
+    <circle cx="960" cy="540" r="300" fill="none" stroke="#c4a000" stroke-width="1" opacity="0.15"/>
+    
+    <g id="hexagonPattern">
+      <polygon points="960,240 1220,390 1220,690 960,840 700,690 700,390" fill="none" stroke="#c4a000" stroke-width="2" opacity="0.4" filter="url(#softGlow)"/>
+      <polygon points="960,290 1180,415 1180,665 960,790 740,665 740,415" fill="none" stroke="#c4a000" stroke-width="1" opacity="0.3"/>
+    </g>
+    
+    <g id="trianglePattern">
+      <polygon points="960,200 1260,700 660,700" fill="none" stroke="#c4a000" stroke-width="1.5" opacity="0.25"/>
+      <polygon points="960,880 660,380 1260,380" fill="none" stroke="#c4a000" stroke-width="1.5" opacity="0.25"/>
+    </g>
+  </g>
+  
+  <g id="gears">
+    <g id="gear1" transform="translate(500, 300)">
+      <circle cx="0" cy="0" r="80" fill="none" stroke="url(#gearGradient)" stroke-width="3"/>
+      <circle cx="0" cy="0" r="60" fill="none" stroke="#c4a000" stroke-width="2" opacity="0.5"/>
+      <circle cx="0" cy="0" r="20" fill="#c4a000" opacity="0.3"/>
+      <g id="gearTeeth1">
+        <rect x="-10" y="-90" width="20" height="20" fill="#c4a000" opacity="0.6"/>
+        <rect x="-10" y="70" width="20" height="20" fill="#c4a000" opacity="0.6"/>
+        <rect x="-90" y="-10" width="20" height="20" fill="#c4a000" opacity="0.6"/>
+        <rect x="70" y="-10" width="20" height="20" fill="#c4a000" opacity="0.6"/>
+        <rect x="55" y="-65" width="20" height="20" fill="#c4a000" opacity="0.6" transform="rotate(45 65 -55)"/>
+        <rect x="-75" y="-65" width="20" height="20" fill="#c4a000" opacity="0.6" transform="rotate(-45 -65 -55)"/>
+        <rect x="55" y="45" width="20" height="20" fill="#c4a000" opacity="0.6" transform="rotate(-45 65 55)"/>
+        <rect x="-75" y="45" width="20" height="20" fill="#c4a000" opacity="0.6" transform="rotate(45 -65 55)"/>
+      </g>
+    </g>
+    
+    <g id="gear2" transform="translate(1420, 300)">
+      <circle cx="0" cy="0" r="70" fill="none" stroke="url(#gearGradient)" stroke-width="3"/>
+      <circle cx="0" cy="0" r="50" fill="none" stroke="#c4a000" stroke-width="2" opacity="0.5"/>
+      <circle cx="0" cy="0" r="18" fill="#c4a000" opacity="0.3"/>
+      <g id="gearTeeth2">
+        <rect x="-8" y="-78" width="16" height="16" fill="#c4a000" opacity="0.6"/>
+        <rect x="-8" y="62" width="16" height="16" fill="#c4a000" opacity="0.6"/>
+        <rect x="-78" y="-8" width="16" height="16" fill="#c4a000" opacity="0.6"/>
+        <rect x="62" y="-8" width="16" height="16" fill="#c4a000" opacity="0.6"/>
+      </g>
+    </g>
+    
+    <g id="gear3" transform="translate(500, 780)">
+      <circle cx="0" cy="0" r="75" fill="none" stroke="url(#gearGradient)" stroke-width="3"/>
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#c4a000" stroke-width="2" opacity="0.5"/>
+      <circle cx="0" cy="0" r="19" fill="#c4a000" opacity="0.3"/>
+      <g id="gearTeeth3">
+        <rect x="-9" y="-84" width="18" height="18" fill="#c4a000" opacity="0.6"/>
+        <rect x="-9" y="66" width="18" height="18" fill="#c4a000" opacity="0.6"/>
+        <rect x="-84" y="-9" width="18" height="18" fill="#c4a000" opacity="0.6"/>
+        <rect x="66" y="-9" width="18" height="18" fill="#c4a000" opacity="0.6"/>
+      </g>
+    </g>
+    
+    <g id="gear4" transform="translate(1420, 780)">
+      <circle cx="0" cy="0" r="85" fill="none" stroke="url(#gearGradient)" stroke-width="3"/>
+      <circle cx="0" cy="0" r="65" fill="none" stroke="#c4a000" stroke-width="2" opacity="0.5"/>
+      <circle cx="0" cy="0" r="22" fill="#c4a000" opacity="0.3"/>
+      <g id="gearTeeth4">
+        <rect x="-11" y="-96" width="22" height="22" fill="#c4a000" opacity="0.6"/>
+        <rect x="-11" y="74" width="22" height="22" fill="#c4a000" opacity="0.6"/>
+        <rect x="-96" y="-11" width="22" height="22" fill="#c4a000" opacity="0.6"/>
+        <rect x="74" y="-11" width="22" height="22" fill="#c4a000" opacity="0.6"/>
+      </g>
+    </g>
+  </g>
+  
+  <g id="circuitry">
+    <path d="M 600 300 L 700 300 L 700 400 L 800 400" fill="none" stroke="#c4a000" stroke-width="1.5" opacity="0.5" filter="url(#softGlow)"/>
+    <path d="M 1320 300 L 1220 300 L 1220 400 L 1120 400" fill="none" stroke="#c4a000" stroke-width="1.5" opacity="0.5" filter="url(#softGlow)"/>
+    <path d="M 600 780 L 700 780 L 700 680 L 800 680" fill="none" stroke="#c4a000" stroke-width="1.5" opacity="0.5" filter="url(#softGlow)"/>
+    <path d="M 1320 780 L 1220 780 L 1220 680 L 1120 680" fill="none" stroke="#c4a000" stroke-width="1.5" opacity="0.5" filter="url(#softGlow)"/>
+    
+    <circle cx="700" cy="300" r="4" fill="#c4a000" opacity="0.8"/>
+    <circle cx="700" cy="400" r="4" fill="#c4a000" opacity="0.8"/>
+    <circle cx="1220" cy="300" r="4" fill="#c4a000" opacity="0.8"/>
+    <circle cx="1220" cy="400" r="4" fill="#c4a000" opacity="0.8"/>
+    <circle cx="700" cy="780" r="4" fill="#c4a000" opacity="0.8"/>
+    <circle cx="700" cy="680" r="4" fill="#c4a000" opacity="0.8"/>
+    <circle cx="1220" cy="780" r="4" fill="#c4a000" opacity="0.8"/>
+    <circle cx="1220" cy="680" r="4" fill="#c4a000" opacity="0.8"/>
+    
+    <path d="M 960 200 L 960 280 M 960 800 L 960 880 M 600 540 L 680 540 M 1240 540 L 1320 540" 
+          fill="none" stroke="#c4a000" stroke-width="1" opacity="0.4" stroke-dasharray="5,5"/>
+  </g>
+  
+  <g id="centralEye">
+    <ellipse cx="960" cy="540" rx="180" ry="120" fill="url(#eyeGradient)" opacity="0.6"/>
+    <ellipse cx="960" cy="540" rx="180" ry="120" fill="none" stroke="#c4a000" stroke-width="3" filter="url(#goldGlow)"/>
+    
+    <ellipse cx="960" cy="540" rx="160" ry="100" fill="none" stroke="#c4a000" stroke-width="1.5" opacity="0.5"/>
+    <ellipse cx="960" cy="540" rx="140" ry="80" fill="none" stroke="#c4a000" stroke-width="1" opacity="0.4"/>
+    
+    <ellipse cx="960" cy="540" rx="80" ry="80" fill="#c4a000" opacity="0.4" filter="url(#goldGlow)"/>
+    <ellipse cx="960" cy="540" rx="80" ry="80" fill="none" stroke="#c4a000" stroke-width="2"/>
+    
+    <circle cx="960" cy="540" r="40" fill="#1a1a1a"/>
+    <circle cx="960" cy="540" r="40" fill="none" stroke="#c4a000" stroke-width="2" filter="url(#goldGlow)"/>
+    
+    <circle cx="960" cy="540" r="20" fill="#c4a000" opacity="0.8" filter="url(#goldGlow)"/>
+    
+    <ellipse cx="960" cy="540" rx="180" ry="120" fill="none" stroke="#c4a000" stroke-width="1" opacity="0.3" stroke-dasharray="10,10"/>
+    
+    <path d="M 780 540 Q 720 480 680 540 Q 720 600 780 540" fill="none" stroke="#c4a000" stroke-width="2" opacity="0.6"/>
+    <path d="M 1140 540 Q 1200 480 1240 540 Q 1200 600 1140 540" fill="none" stroke="#c4a000" stroke-width="2" opacity="0.6"/>
+    
+    <path d="M 960 420 Q 900 360 960 300 Q 1020 360 960 420" fill="none" stroke="#c4a000" stroke-width="1.5" opacity="0.5"/>
+    <path d="M 960 660 Q 900 720 960 780 Q 1020 720 960 660" fill="none" stroke="#c4a000" stroke-width="1.5" opacity="0.5"/>
+  </g>
+  
+  <g id="radiatingLines" opacity="0.3">
+    <line x1="960" y1="540" x2="960" y2="200" stroke="#c4a000" stroke-width="1"/>
+    <line x1="960" y1="540" x2="960" y2="880" stroke="#c4a000" stroke-width="1"/>
+    <line x1="960" y1="540" x2="620" y2="540" stroke="#c4a000" stroke-width="1"/>
+    <line x1="960" y1="540" x2="1300" y2="540" stroke="#c4a000" stroke-width="1"/>
+    <line x1="960" y1="540" x2="720" y2="300" stroke="#c4a000" stroke-width="1"/>
+    <line x1="960" y1="540" x2="1200" y2="300" stroke="#c4a000" stroke-width="1"/>
+    <line x1="960" y1="540" x2="720" y2="780" stroke="#c4a000" stroke-width="1"/>
+    <line x1="960" y1="540" x2="1200" y2="780" stroke="#c4a000" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <filter id="screenGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="scanline">
+      <feImage result="scanImg" xlink:href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='4'%3E%3Crect width='2' height='2' fill='%23000' opacity='0.3'/%3E%3C/svg%3E"/>
+      <feTile result="scanTile"/>
+      <feComposite in="SourceGraphic" in2="scanTile" operator="over"/>
+    </filter>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.25"/>
+    </pattern>
+    <pattern id="noiseGreen" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect x="10" y="20" width="2" height="1" fill="#00ff00" opacity="0.3"/>
+      <rect x="45" y="60" width="3" height="1" fill="#00ff00" opacity="0.2"/>
+      <rect x="70" y="35" width="1" height="2" fill="#00ff00" opacity="0.4"/>
+      <rect x="25" y="80" width="2" height="1" fill="#00ff00" opacity="0.2"/>
+      <rect x="85" y="10" width="1" height="1" fill="#00ff00" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="#0a0a0a"/>
+  
+  <g id="monitorGrid">
+    <g id="screen1" transform="translate(60, 40)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#001a00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <path d="M 50 150 Q 100 100 150 150 Q 200 200 250 150 Q 300 100 350 150" fill="none" stroke="#00ff00" stroke-width="2" opacity="0.7"/>
+        <path d="M 50 200 L 100 180 L 150 220 L 200 160 L 250 200 L 300 170 L 350 210" fill="none" stroke="#00ff00" stroke-width="1.5" opacity="0.5"/>
+        <circle cx="200" cy="150" r="40" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.4"/>
+        <line x1="200" y1="110" x2="200" y2="190" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+        <line x1="160" y1="150" x2="240" y2="150" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+      </g>
+      <text x="20" y="285" fill="#00ff00" font-family="monospace" font-size="10" opacity="0.6">CAM-01 // SECTOR-A</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen2" transform="translate(520, 40)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#1a0f00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <rect x="50" y="50" width="60" height="80" fill="none" stroke="#ff8c00" stroke-width="1.5" opacity="0.6"/>
+        <rect x="150" y="70" width="60" height="80" fill="none" stroke="#ff8c00" stroke-width="1.5" opacity="0.6"/>
+        <rect x="250" y="40" width="60" height="80" fill="none" stroke="#ff8c00" stroke-width="1.5" opacity="0.6"/>
+        <path d="M 80 180 L 80 250 M 180 180 L 180 250 M 280 180 L 280 250" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.4"/>
+        <circle cx="200" cy="150" r="60" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3" stroke-dasharray="5,5"/>
+      </g>
+      <text x="20" y="285" fill="#ff8c00" font-family="monospace" font-size="10" opacity="0.6">CAM-02 // SECTOR-B</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen3" transform="translate(980, 40)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#001a00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <circle cx="200" cy="140" r="80" fill="none" stroke="#00ff00" stroke-width="1.5" opacity="0.5"/>
+        <circle cx="200" cy="140" r="50" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.4"/>
+        <circle cx="200" cy="140" r="20" fill="none" stroke="#00ff00" stroke-width="2" opacity="0.6"/>
+        <line x1="200" y1="60" x2="200" y2="220" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+        <line x1="120" y1="140" x2="280" y2="140" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+        <line x1="143" y1="83" x2="257" y2="197" stroke="#00ff00" stroke-width="0.5" opacity="0.2"/>
+        <line x1="257" y1="83" x2="143" y2="197" stroke="#00ff00" stroke-width="0.5" opacity="0.2"/>
+      </g>
+      <text x="20" y="285" fill="#00ff00" font-family="monospace" font-size="10" opacity="0.6">CAM-03 // RADAR</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen4" transform="translate(1440, 40)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#1a0f00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <path d="M 50 250 L 100 200 L 150 220 L 200 150 L 250 180 L 300 100 L 350 130" fill="none" stroke="#ff8c00" stroke-width="2" opacity="0.7"/>
+        <path d="M 50 250 L 100 230 L 150 240 L 200 200 L 250 210 L 300 170 L 350 190" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.4"/>
+        <rect x="50" y="50" width="300" height="80" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+        <line x1="50" y1="70" x2="350" y2="70" stroke="#ff8c00" stroke-width="0.5" opacity="0.2"/>
+        <line x1="50" y1="90" x2="350" y2="90" stroke="#ff8c00" stroke-width="0.5" opacity="0.2"/>
+        <line x1="50" y1="110" x2="350" y2="110" stroke="#ff8c00" stroke-width="0.5" opacity="0.2"/>
+      </g>
+      <text x="20" y="285" fill="#ff8c00" font-family="monospace" font-size="10" opacity="0.6">CAM-04 // SIGNAL</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen5" transform="translate(60, 380)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#1a0f00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <path d="M 100 50 L 100 250 M 200 50 L 200 250 M 300 50 L 300 250" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+        <path d="M 50 100 L 350 100 M 50 150 L 350 150 M 50 200 L 350 200" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+        <circle cx="100" cy="100" r="8" fill="#ff8c00" opacity="0.5"/>
+        <circle cx="200" cy="150" r="8" fill="#ff8c00" opacity="0.5"/>
+        <circle cx="300" cy="200" r="8" fill="#ff8c00" opacity="0.5"/>
+        <circle cx="200" cy="100" r="5" fill="#ff8c00" opacity="0.3"/>
+        <circle cx="300" cy="150" r="5" fill="#ff8c00" opacity="0.3"/>
+      </g>
+      <text x="20" y="285" fill="#ff8c00" font-family="monospace" font-size="10" opacity="0.6">CAM-05 // GRID-LOCK</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen6" transform="translate(520, 380)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#001a00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <path d="M 50 150 L 80 120 L 110 150 L 140 120 L 170 150 L 200 120 L 230 150 L 260 120 L 290 150 L 320 120 L 350 150" fill="none" stroke="#00ff00" stroke-width="2" opacity="0.7"/>
+        <path d="M 50 200 L 350 200" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+        <path d="M 50 100 L 350 100" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+        <rect x="100" y="60" width="200" height="180" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.2" stroke-dasharray="3,3"/>
+      </g>
+      <text x="20" y="285" fill="#00ff00" font-family="monospace" font-size="10" opacity="0.6">CAM-06 // FREQ-MON</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen7" transform="translate(980, 380)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#1a0f00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <polygon points="200,60 280,120 260,210 140,210 120,120" fill="none" stroke="#ff8c00" stroke-width="2" opacity="0.6"/>
+        <polygon points="200,90 250,130 240,190 160,190 150,130" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.4"/>
+        <circle cx="200" cy="150" r="15" fill="#ff8c00" opacity="0.3"/>
+        <line x1="200" y1="60" x2="200" y2="210" stroke="#ff8c00" stroke-width="0.5" opacity="0.3"/>
+      </g>
+      <text x="20" y="285" fill="#ff8c00" font-family="monospace" font-size="10" opacity="0.6">CAM-07 // PERIMETER</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen8" transform="translate(1440, 380)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#001a00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <path d="M 50 50 L 350 50 L 350 250 L 50 250 Z" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+        <path d="M 100 50 L 100 250 M 150 50 L 150 250 M 200 50 L 200 250 M 250 50 L 250 250 M 300 50 L 300 250" fill="none" stroke="#00ff00" stroke-width="0.5" opacity="0.2"/>
+        <path d="M 50 100 L 350 100 M 50 150 L 350 150 M 50 200 L 350 200" fill="none" stroke="#00ff00" stroke-width="0.5" opacity="0.2"/>
+        <circle cx="150" cy="100" r="5" fill="#00ff00" opacity="0.6"/>
+        <circle cx="250" cy="150" r="5" fill="#00ff00" opacity="0.6"/>
+        <circle cx="200" cy="200" r="5" fill="#00ff00" opacity="0.6"/>
+        <path d="M 150 100 L 250 150 L 200 200" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.4"/>
+      </g>
+      <text x="20" y="285" fill="#00ff00" font-family="monospace" font-size="10" opacity="0.6">CAM-08 // NETWORK</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen9" transform="translate(60, 720)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#001a00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <path d="M 50 250 L 100 100 L 150 200 L 200 80 L 250 180 L 300 120 L 350 220" fill="none" stroke="#00ff00" stroke-width="2" opacity="0.6"/>
+        <path d="M 50 250 L 350 250" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+        <path d="M 50 50 L 50 250" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+      </g>
+      <text x="20" y="285" fill="#00ff00" font-family="monospace" font-size="10" opacity="0.6">CAM-09 // ACTIVITY</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen10" transform="translate(520, 720)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#1a0f00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <circle cx="200" cy="140" r="100" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+        <path d="M 200 40 L 200 240" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.4"/>
+        <path d="M 100 140 L 300 140" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.4"/>
+        <path d="M 200 140 L 270 80" fill="none" stroke="#ff8c00" stroke-width="2" opacity="0.7"/>
+        <circle cx="200" cy="140" r="5" fill="#ff8c00" opacity="0.8"/>
+        <text x="280" y="80" fill="#ff8c00" font-family="monospace" font-size="8" opacity="0.5">N</text>
+        <text x="110" y="145" fill="#ff8c00" font-family="monospace" font-size="8" opacity="0.5">W</text>
+        <text x="280" y="210" fill="#ff8c00" font-family="monospace" font-size="8" opacity="0.5">S</text>
+      </g>
+      <text x="20" y="285" fill="#ff8c00" font-family="monospace" font-size="10" opacity="0.6">CAM-10 // COMPASS</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen11" transform="translate(980, 720)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#001a00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <path d="M 100 80 L 100 220 L 300 220 L 300 80 Z" fill="none" stroke="#00ff00" stroke-width="1.5" opacity="0.5"/>
+        <path d="M 130 100 L 130 200 L 270 200 L 270 100 Z" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+        <circle cx="200" cy="150" r="30" fill="none" stroke="#00ff00" stroke-width="2" opacity="0.6"/>
+        <circle cx="200" cy="150" r="10" fill="#00ff00" opacity="0.4"/>
+        <path d="M 150 150 L 100 150 M 250 150 L 300 150 M 200 100 L 200 80 M 200 200 L 200 220" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.3"/>
+      </g>
+      <text x="20" y="285" fill="#00ff00" font-family="monospace" font-size="10" opacity="0.6">CAM-11 // TARGET</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+    
+    <g id="screen12" transform="translate(1440, 720)">
+      <rect width="420" height="300" fill="#0a0f0a" stroke="#1a3a1a" stroke-width="3" rx="5"/>
+      <rect x="10" y="10" width="400" height="280" fill="#1a0f00" opacity="0.8"/>
+      <g filter="url(#screenGlow)">
+        <path d="M 50 150 Q 100 50 200 150 Q 300 250 350 150" fill="none" stroke="#ff8c00" stroke-width="2" opacity="0.6"/>
+        <path d="M 50 150 Q 100 250 200 150 Q 300 50 350 150" fill="none" stroke="#ff8c00" stroke-width="2" opacity="0.6"/>
+        <circle cx="200" cy="150" r="5" fill="#ff8c00" opacity="0.8"/>
+        <path d="M 50 50 L 350 50 L 350 250 L 50 250 Z" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.2"/>
+      </g>
+      <text x="20" y="285" fill="#ff8c00" font-family="monospace" font-size="10" opacity="0.6">CAM-12 // INTERFERENCE</text>
+      <rect x="10" y="10" width="400" height="280" fill="url(#scanlines)" opacity="0.5"/>
+    </g>
+  </g>
+  
+  <g id="statusBar">
+    <rect x="0" y="1050" width="1920" height="30" fill="#0a0a0a" stroke="#1a3a1a" stroke-width="1"/>
+    <text x="20" y="1070" fill="#00ff00" font-family="monospace" font-size="12" opacity="0.7">SYS:ACTIVE</text>
+    <text x="200" y="1070" fill="#ff8c00" font-family="monospace" font-size="12" opacity="0.7">REC:00:42:17</text>
+    <text x="450" y="1070" fill="#00ff00" font-family="monospace" font-size="12" opacity="0.7">NODES:12/12</text>
+    <text x="700" y="1070" fill="#ff8c00" font-family="monospace" font-size="12" opacity="0.7">SIGNAL:NOMINAL</text>
+    <text x="1000" y="1070" fill="#00ff00" font-family="monospace" font-size="12" opacity="0.7">UPLINK:STABLE</text>
+    <text x="1250" y="1070" fill="#ff8c00" font-family="monospace" font-size="12" opacity="0.7">THREAT:LOW</text>
+    <text x="1500" y="1070" fill="#00ff00" font-family="monospace" font-size="12" opacity="0.7">ENC:AES-256</text>
+    <text x="1750" y="1070" fill="#ff8c00" font-family="monospace" font-size="12" opacity="0.7">CH:ALL</text>
+  </g>
+</svg>
